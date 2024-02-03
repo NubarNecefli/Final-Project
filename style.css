@@ -812,6 +812,7 @@ button {
 /* footer 1 */
 #footer-1 {
   position: relative;
+  overflow: hidden;
 }
 #footer-1::after {
   display: block;
