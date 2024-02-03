@@ -897,3 +897,18 @@ button {
   color: var(--blue-hover-color);
   text-decoration: underline;
 }
+
+  /* animasiya */
+  @keyframes colorChange {
+    from { color: #606062; }
+    to { color: #ff0000; }
+  }
+
+  
+  .link:hover svg {
+    animation: colorChange 0.5s ease-in-out forwards;
+  }
+
+  
+
+
