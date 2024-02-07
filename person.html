@@ -4,82 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Panel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./person.css">
 </head>
 <body>
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>LinkedIN Clone</title>
-        <link href="linkedin.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    </head>
-    <body>
-        <header class="header">
-            <div class="left-section">
-                <img class="logo" src="icons/linkedin logo icon.svg">
-                <input class="search-box" type="text"  placeholder="Search" >
-                
-            </div>
-            <div class="middle-section">
-                <div class="top-icon">
-                    <img class="home" src="icons/home.svg">
-                    <label>Home</label>
-                  
+   
+       
+        <header id="header" class="header_box_shadow">
+            <nav class="nav_bar_profil">
+                <div class="logo_search_bar">
+                    <a href="index.html"><img class="logo" src="./images/logo-linkedin.png" alt="logo"></a>
+                    <div class="search_bar">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input class="search_bar_input"  type="text" placeholder="Research">
+                    </div>
                 </div>
-                <div class="top-icon">
-                    <img style="height: 20px;" class="home" src="icons/users-svgrepo-com.svg">
-                    <label>My Network</label>
+                <div class="icons_bar_profils">
+                    <ul class="icons_links_profil ">
+                        <li class="icon_link after_element"><a href="index.html"><i class="fa-solid fa-house"></i><p>Home page</p></a></li>
+                        <li class="icon_link"><a href="reseaux.html"><i class="fa-solid fa-user-group"></i><span><p>Networks</p></span></a></li>
+                        <li class="icon_link"><a href="emplois.html"><i class="fa-solid fa-briefcase"></i><span><p>Jobs</p></span></a></li>
+                        <li class="icon_link"><a href="messagerie.html"><i class="fa-solid fa-comment-dots"></i><span><p>Messaging</p></span></a></li>
+                        <li class="icon_link icon_new_notification "><a href="notification.html"><i class="fa-solid fa-bell"></i><span><p>Notifications</p></span></a></li>
+                        <li class="icon_link me" id="profil_button">
+                            <a href="#" id="link_ckeck_pro"><img id="my_profil" src="./images/resim 2.jpg" alt=""><span><p>You<i class="fa-solid fa-caret-down"></i></p></span></a>
+                            <div class="profil_link" id="menu_profil">
+                                <div class="profil_name_job">
+                                    <img class="post_photo_profil" src="./images/resim 2.jpg" alt="#">
+                                    <div class="name_and_job"> 
+                                        <h2>NUBAR NAJAFLI SHAFA</h2>
+                                        <p> FRONTEND DEVELOPER</p>
+                                    </div>
+                                </div>
+                                <div class="see_my_profil"><a href="profil.html">View profile </a></div>
+                                <div class="account">
+                                    <h4>Account</h4>
+                                    <p><a href="#">Upgrade to Premium
+                                    </a></p>
+                                    <p class="option"><a href="#">Preference and Privacy </a></p>
+                                    <p class="option"><a href="#">Help</a></p>
+                                    <p class="option"><a href="#">Language</a></p>
+                                </div>
+                                <div class="account">
+                                    <h4>Manage</h4>
+                                    <p><a href="#">Position and activity
+                                    </a></p>
+                                    <p class="option"><a href="#">Job offer account</a></p>
+                                </div>
+                                <div class="log_out">
+                                    <p>Disconnect</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+    
+                    <ul id="second_icons_links_nav">
+                        <li class="grid_products"><a href="#"><img  class="grid_icons" src="./images/grid.png" alt="#">
+                            <span ><p>Products <i class="fa-solid fa-caret-down"></i></p></span></a></li>
+    
+                        <li class="new_job_plus"><a href="#"><i class="fa-solid fa-circle-plus"></i><span><p>Post a job offer</p></span> <span class="responsive_text_job_header">Publier une offre <br> d'emploi</span></a></li>
+                    </ul>
                 </div>
-                <div class="top-icon">
-                    <img style="height: 20px;" class="home" src="icons/portfolio-suitcase-svgrepo-com.svg">
-                    <label>Jobs</label>
-                </div>
-                <div class="top-icon">
-                    <img class="home" src="icons/chat-square-plain-2-svgrepo-com.svg">
-                    <label>Messaging</label>
-                </div>
-                <div class="notification-container">
-                    <img class="notification" src="icons/notification-svgrepo-com.svg">
-                    <label>Notifications</label>
-                    <div style="font-size: 14px;" class="notification-alert">3</div>
-                </div>
-                <div class="me-icon">
-                    <img class="dp" src="photos/profile pic.jpeg">
-                    <label style="opacity: 0.6;font-family: bold;">Me<i class="fa fa-sort-desc"></i></label>
-                    
-                </div> 
-            </div>
-            <div class="right-section">
-                <div class="top-icon">
-                <img style="height: 20px;" class="home" src="icons/square-4-grid-svgrepo-com.svg">
-                <label>For Business</label>
-            </div>
-            <div class="top-icon">
-                <img style="height: 20px;" class="home" src="icons/business-svgrepo-com.svg">
-                <label>Post a job</label>
-            </div> 
-            </div>
+            </nav>
         </header>
         
-        <main class="main">
-            <div class="left-main">
-               <div class="left-main-1">
-                <img class="banner" src="photos/banner.jpeg">
-                <img class="my-picture" src="photos/profile pic.jpeg">
-                <div class="about">
-                    <h5>Rebecca Adedire</h5>
-                    <P>Mental Health Tech. Attract,<br> Motivate, Retain. Show your <br> workforce you care</P>
-                </div>
-                <div class="analytics">
-                    <h5>Analytics & tool</h5>
-                    <p>43 posts impressions</p>
-                </div>
+        
+      
+      
 
-            </main>
+
+
+
+
 
 
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
