@@ -3508,6 +3508,9 @@ body{
   .messages_float_box{
     display: none;
   }
+  .messages_container{
+    margin-bottom: 90px;
+  }
   
 }
 @media screen and (max-width: 720px) {
