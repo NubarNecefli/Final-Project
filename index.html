@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="./style.css">
    <link rel="stylesheet" href="./Media-query.css">
 </head>
-
 <body>
 
     <header>
@@ -69,7 +68,7 @@
                         </svg>
                         <span>Learning</span>
                     </a>
-                    <a class="link flex" id="link-4" href="./jobs.html">
+                    <a class="link flex" id="link-3" href="./jobs.html">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="24px" fill="none" focusable="false"
                             class="lazy-loaded" aria-busy="false">
                             <path
@@ -79,7 +78,7 @@
                         <span>Jobs</span>
                     </a>
 
-                    <a class="link flex" id="link-4" href="./jobs.html">
+                    <a class="link flex" id="link-4" href="#">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="24px" fill="none" focusable="false"
                             class="lazy-loaded" aria-busy="false"> 
                             <path
@@ -106,25 +105,26 @@
     <section class="container flex registration-container" id="registration-page">
         <div class="registration-section flex">
             <h1>Welcome to your professional community</h1>
-            <form>
+
+            <form id="myForm" action="./person.html" method="POST">
                 <div class="input-section">
                     <div class="email-box">
-                        <label for="">Email or Phone</label>
+                        <label for="email">Email or Phone</label>
                         <div class="email-input-box flex">
-                            <input type="text">
+                            <input type="text" id="email" name="email">
                         </div>
                     </div>
                     <div class="password-box">
-                        <label for="">Password</label>
+                        <label for="password">Password</label>
                         <div class="password-input-box flex">
-                            <input type="password">
-                            <a href="show">show</a>
+                            <input type="password" id="password" name="password">
+                            <a href="#">show</a>
                         </div>
                     </div>
                     <a class="forget-password" href="#">Forget password?</a>
                 </div>
                 <div class="button-section">
-                    <a href="#" class="blue-button sign-in-btn">Sign in</a>
+                    <button type="submit" class="blue-button sign-in-btn">Sign in</button>
                     <p class="btn-division-or"><span>or</span></p>
                     <a href="#" class="grey-border-button flex google-sign-in-btn">
                         <img src="images/registration google icon.svg" alt="alt">
@@ -133,6 +133,8 @@
                     <a href="#" class="grey-border-button new-user-sign-up-btn">New to LinkedIn? Join now</a>
                 </div>
             </form>
+
+
         </div>
         <img class="registration-image" src="images/registration hero img.svg" alt="alt">
 
@@ -808,7 +810,7 @@
 
 
 
-    <script src="script.js"></script>
+    <script src="./script.js"></script>
     <script src="https://kit.fontawesome.com/aca50b7206.js" crossorigin="anonymous"></script>
 </body>
 
