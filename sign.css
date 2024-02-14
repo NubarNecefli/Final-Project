@@ -12,6 +12,7 @@
     align-items: center;
     height: 100vh;
     background-color: #fafcfd;
+    overflow: hidden;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     color: black;
   }
@@ -159,8 +160,8 @@
   }
   #logo{
     position: absolute;
-    width: 470px;
-    height: 600px;
+    width: 100%;
+    height: 620px;
     background-image: url(/images/logo-linkedin.png);
     cursor: none;
   }
