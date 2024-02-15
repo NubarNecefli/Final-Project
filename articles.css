@@ -1,17 +1,22 @@
-/* GLOBAL VARIABLES */
-body{
+body {
   width: 100%;
   /* background-image: url(/images/logo-linkedin.png); */
   background-color: rgb(5, 80, 141);
   overflow: hidden;
 }
+
 :root {
   --font: "Roboto", sans-serif;
-  --fontOrigin: 1rem;     /* 16px */
-  --fontSmall: 0.625em;   /* 10px */
-  --fontMedium: 0.875em;  /* 14px */
-  --fontNormal: 1em;      /* 16px */
-  --fontLarge:  1.375em;  /* 22px */
+  --fontOrigin: 1rem;
+  /* 16px */
+  --fontSmall: 0.625em;
+  /* 10px */
+  --fontMedium: 0.875em;
+  /* 14px */
+  --fontNormal: 1em;
+  /* 16px */
+  --fontLarge: 1.375em;
+  /* 22px */
   --fontLight: 100;
   --fontRegular: 400;
   --speed: 0.65s;
@@ -21,6 +26,7 @@ body{
   from {
     object-position: 0 50%;
   }
+
   to {
     object-position: 100% 50%;
   }
@@ -31,6 +37,7 @@ body{
     -webkit-transform: scale(1, 1);
     transform: scale(1, 1);
   }
+
   to {
     -webkit-transform: scale(1.5, 1.5);
     transform: scale(2, 2);
@@ -56,7 +63,7 @@ body {
 
 .wrapper {
   display: grid;
-  grid-template-columns: repeat( auto-fit, 1fr );
+  grid-template-columns: repeat(auto-fit, 1fr);
   grid-template-rows: auto;
   grid-template-areas:
     "menu menu menu"
@@ -103,6 +110,7 @@ body {
 .menu__item:hover {
   color: rgba(150, 150, 255, 1);
 }
+
 .menu__item.active {
   color: rgba(100, 100, 250, 1);
 }
@@ -236,8 +244,8 @@ body {
 }
 
 .card__profile img {
-  -webkit-transform: scale(1.5, 1.5)  translateZ(0);
-  transform: scale(1.5, 1.5)  translateZ(0);
+  -webkit-transform: scale(1.5, 1.5) translateZ(0);
+  transform: scale(1.5, 1.5) translateZ(0);
   display: block;
   width: 100%;
   height: 100%;
@@ -253,8 +261,8 @@ body {
 }
 
 .card:hover .card__profile img {
-  -webkit-transform: scale(1, 1)  translateZ(0);
-  transform: scale(1, 1)  translateZ(0);
+  -webkit-transform: scale(1, 1) translateZ(0);
+  transform: scale(1, 1) translateZ(0);
 }
 
 .card__body {
@@ -356,7 +364,7 @@ body {
   color: rgba(250, 250, 250, 0.4);
 }
 
-/* MODIFIERS */
+
 .card[data-effect="blur"]:hover .card__image img {
   -webkit-filter: blur(3px);
   filter: blur(3px);
