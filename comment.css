@@ -1,8 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .comment-section {
-  width: 600px;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  width: 100%;
+  max-width: 600px; 
+  margin: 0 auto; 
+  padding: 0 10px; 
 }
 
 .parent {
@@ -10,7 +16,7 @@
   border: 1px solid #ddd;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-  margin: 5px 0;
+  margin: 10px 0; 
   font-family: "Source Sans Pro", "Arial", sans-serif;
 }
 
@@ -19,11 +25,11 @@
 }
 
 .parent+.parent {
-  margin: 35px 0;
+  margin-top: 20px; 
 }
 
-.parent .comment {
-  padding: 0 15px;
+.comment {
+  color: #444;
 }
 
 .user {
@@ -32,19 +38,14 @@
   color: #2c2c2c;
 }
 
-.comment {
-  color: #444;
-}
-
 .action-btns {
   text-align: right;
 }
 
 .btn-action {
   padding: 5px;
-  margin: 4px 0 20px 10px;
+  margin: 4px 0 10px 10px;
   color: white;
-
   text-transform: capitalize;
   border: 0;
   border-radius: 2px;
@@ -67,7 +68,7 @@
 .user {
   display: flex;
   align-items: center;
-  margin-bottom: 15px;
+  margin-bottom: 10px; 
 }
 
 .user-avatar {
@@ -93,8 +94,8 @@
 }
 
 body {
-  overflow: hidden;
   width: 100%;
+  font-size: 16px; 
 }
 
 #message {
@@ -103,20 +104,39 @@ body {
   background-color: rgb(28, 110, 218);
   color: white;
   height: 53px;
-  width: 306px;
+  width: 100%; 
+  max-width: 400px; 
+  padding: 10px; 
+  margin-bottom: 10px; 
 }
 
 #send {
   border: none;
-  background-color: red;
-  width: 50px;
-  height: 30px;
+  background-color: rgb(11, 191, 236);
+  width: 100px; 
+  height: 40px; 
   border-radius: 10px;
   color: beige;
 }
 
 .mess {
   border: 1px solid;
-  width: 209px;
-  height: 45px;
+  width: 100%;
+  max-width: 300px; 
+  padding: 10px; 
+  margin-bottom: 20px; 
+}
+
+@media (max-width: 768px) {
+  .comment-section {
+    padding: 0 20px; 
+  }
+
+  #message {
+    max-width: 100%; 
+  }
+
+  .mess {
+    max-width: 100%; 
+  }
 }
