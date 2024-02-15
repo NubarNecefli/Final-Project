@@ -1,14 +1,13 @@
-// Resim URL'lerini içeren bir dizi
+
 const a = document.getElementById('listingsgrid')
 const image = [
     "./images/7d911d2b3a1e3fb32023a7bcc152b14e.jpg",
     // Diğer resim URL'lerini buraya ekleyebilirsiniz
   ];
   
-  // API endpoint'i
+  
   const apiEndpoint = "https://65cbd31cefec34d9ed88265e.mockapi.io/personss/people";
   
-  // Resim URL'lerini API'ye post etmek için bir fonksiyon
   async function postImagesToAPI(image) {
     try {
       for (let i = 0; i < image.length; i++) {
